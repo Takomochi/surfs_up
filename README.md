@@ -1,7 +1,7 @@
-# Surfs up Analysis
+# Weather Analysis for a Surf Shop
 
 ## Overview of the statistical analysis
-The client wants information about temperature trends before opening the surf shop. Specifically, the client wants temperature data for the months of June and December in Oahu, in order to determine if the surf and ice cream shop business is sustainable year-round.
+Before opening the surf and ice cream shop, the client wants temperature trends. Specifically, the client wants temperature data for June and December in Oahu to determine if the surf and ice cream shop business is sustainable year-round.
 
 - Task 1 : Determine the Summary Statistics for June
 - Task 2 : Determine the Summary Statistics for December
@@ -13,7 +13,7 @@ The notebook for the analysis is located [here](https://github.com/Takomochi/sur
 - Software: Python 3.7.10, Jupyter Notebook
 
 ## Results
-Images below are statisics of temperature for both June and December.
+Images below are statistics of temperature for both June and December.
 
 <span>
 <img width="132" alt="june_temps" src="https://user-images.githubusercontent.com/85041697/147132288-77fa9b3e-8a9c-46c8-908c-8213011f2561.png">
@@ -21,15 +21,13 @@ Images below are statisics of temperature for both June and December.
 </span>
 
 - June has about 2000 more temperature data than December.
-
-- There is about 3°F difference of average temperature between June and December.
-
-- Minimum temperature is 56°F in December while June is 64°F.
+- There is about 3°F difference in average temperature between June and December.
+- The minimum temperature is 56°F in December, while the minimum temperature is 64°F  in June.
 
 ## Summary
 ### Additional Analysis
-1. Overall, there is no significant difference in temperature between June and December.<br>
-For better understanding about the data, I created precipitation dataframes for June and December.
+1. Overall, there is no significant difference in temperature between June and December. 
+I created precipitation data frames for June and December to better understand the data.
 
     ```
     # Extract precipitation data for June and December.
@@ -54,7 +52,7 @@ For better understanding about the data, I created precipitation dataframes for 
     On average, December has much higher precipitation than June.
 
 
-2. By looking at this data, however, it is hard to determine that the surf and ice cream shop business is sustainable year-round. So I created another query that shows average precipitaion for every month.
+2. However, by looking at this data, it is hard to determine that the surf and ice cream shop business is sustainable year-round. So I created another query that shows the average temperature and precipitation every month.
 
     ```
     # Get average temperature for every month.
@@ -76,6 +74,6 @@ For better understanding about the data, I created precipitation dataframes for 
     <img src="https://user-images.githubusercontent.com/85041697/147162175-e4c72b74-f3aa-43b2-9a50-045e789fcc9b.png"></span>
 
     ### Conclusion
-    Temparature is stable as we can see in the first chart. The range is between 68°F and 76°F. The average precipitation in March and December is more than 20mm. Other months such as November and July, also have high average precipitation. 
+   The temperature range is between 68°F and 76°F. So, we can say that the temperature in Hawaii is stable year-round. On the other hand, the average precipitation in March and December is more than 20mm. Additional months such as November and July also have high average precipitation.  
 
     Overall, we could say that the weather in Hawaii is stable. However, the business might have a hard time in March and December as we may have high precipitation.
